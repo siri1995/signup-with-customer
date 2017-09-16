@@ -1,0 +1,6 @@
+<form action="/accounts/register/" method="post">{% csrf_token %}
+   <p style="color:red"> {{form.username.errors}}</p>
+    {{ form1.as_p }}
+    {{ form2.as_p }}
+    <input type="submit" value="Create the account">
+</form>
